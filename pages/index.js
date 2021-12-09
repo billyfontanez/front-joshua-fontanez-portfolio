@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  //needs elevator press and carosell of testimonials
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +15,34 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Joshua Fontanez
+        </h1>
+
+        <h1 className="title">
+          Read{' '}
+          <Link href="/bio">
+          <a>Bio</a>
+          </Link>
+
+          <Link href="/blog">
+          <a>Blog</a>
+          </Link>
+
+          <Link href="/contact">
+          <a>Contact</a>
+          </Link>
+
+          <Link href="/resume">
+          <a>Resume</a>
+          </Link>
+
+          <Link href="/testimonials">
+          <a>Testimonials</a>
+          </Link>
+
+          <Link href="/work">
+          <a>Work</a>
+          </Link>
         </h1>
 
         <p className={styles.description}>
